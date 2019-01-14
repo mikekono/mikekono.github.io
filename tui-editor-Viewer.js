@@ -1902,7 +1902,7 @@ var MarkdownitCodeBlockRenderer = function MarkdownitCodeBlockRenderer(markdowni
                     setTokenAttribute(currentToken, 'data-backticks', numberOfBackticks, true);
                 }
                 if (currentToken.info) {
-                    setTokenAttribute(currentToken, 'data-language', escape(currentToken.info.replace(' ', ''), true));
+                    setTokenAttribute(currentToken, 'data-language', escape(currentToken.info, true));
                 }
             }
         }
